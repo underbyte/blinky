@@ -1,0 +1,118 @@
+@import "../bower_components/bootstrap/less/variables.less";
+
+//*-----------------------------------------
+//* Global
+//*-----------------------------------------
+body {
+  font-size: 15px;
+}
+.author-thumb {
+  height: 4rem;
+  width: 4rem;
+}
+#ub-nav-social {
+  margin: 1.5rem 0 1.5rem 1.5rem;
+}
+.ub-center-meta {
+  @media (max-width: @screen-xs-max) {
+    text-align: center;
+  }
+}
+#ub-static {
+  padding: 3rem 0;
+}
+
+//*-----------------------------------------
+//* Nav
+//*-----------------------------------------
+#ub-nav {
+  a {
+    color: @gray;
+  }
+}
+
+//*-----------------------------------------
+//* Icons Font
+//*-----------------------------------------
+.ub-share-icon span {
+  color: #ffffff;
+  margin: 0 3px;
+  .transition(all 0.2s ease-in-out);
+  &:hover {
+    opacity: 0.5;
+  }
+}
+.ub-share-icon {
+  &.twitter {
+    .fa-circle {
+      color: #0bb6db;
+    }
+  }
+  &.facebook {
+    .fa-circle {
+      color: #0781d7;
+    }
+  }
+  &.google-plus {
+    .fa-circle {
+      color: #f75f5f;
+    }
+  }
+  &.github {
+    .fa-circle {
+      color: #333;
+    }
+  }
+  a:hover, a:focus {
+    color: #BBC7CC;
+  }
+}
+.fa-hand-o-right {
+  margin-right: 1rem;
+  color: @brand-warning;
+}
+
+//*-----------------------------------------
+//* Search Results
+//*-----------------------------------------
+#ub-search {
+  color: black;
+  position: relative;
+  display: block;
+  margin: 1.5rem;
+  .fa-search {
+    color: @gray;
+  }
+  #ub-search-input {
+    padding-left: 2px;
+    color: @gray;
+    background: #ffffff;
+    font-size: 15px;
+  }
+  input:focus {
+      border-bottom: 1px solid @gray;
+    }
+  ::-webkit-input-placeholder {
+    color: @gray;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: @gray;
+  }
+
+  :-ms-input-placeholder {
+    color: @gray;
+  }
+}
+#ub-search-container {
+  display: none;
+  top: 30px;
+}
+#ub-search-results {
+  min-width: 25rem;;
+  background: #ffffff;
+}
+.ub-search-clear-toggle {
+  margin-left: 5.5rem;
+  color: #f75f5f;
+}

@@ -1,0 +1,12 @@
+{{! Previous/next page links }}
+<div id="ub-pager" class="row">
+  <ul class="pager">
+    <li class="next {{#if next}}active{{else}}disabled{{/if}}">
+      <a class="" href="{{page_url next}}">Older &rarr;</a>
+    </li>
+    <li>Page {{page}} of {{pages}}</li>
+    <li class="previous {{#if prev}}active{{else}}disabled{{/if}}">
+      <a class="" href="{{page_url prev}}">&larr; Newer</a>
+    </li>
+  </ul>
+</div>

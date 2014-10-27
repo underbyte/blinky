@@ -1,0 +1,22 @@
+{
+  "name": "blinky",
+  "version": "0.0.1",
+  "description": "Free Ghost Theme",
+  "license": "MIT",
+  "authors": {
+    "name": "underbyte",
+    "url": "http://www.underbyte.io"
+  },
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.1.1",
+    "fontawesome": "~4.2.0"
+  },
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "fastclick": "~1.0.3"
+  }
+}

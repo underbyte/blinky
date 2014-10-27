@@ -1,0 +1,77 @@
+{{!< default}}
+
+{{#post}}
+<main id="ub-main" class="content container" role="main">
+  <div class="col-md-12">
+    <article class="panel panel-primary {{post-class}}">
+      {{! Post header}}
+      <div class="panel-heading">
+        {{#if featured}}
+          <span class="fa fa-hand-o-right"></span>
+        {{/if}}
+        <h3 class="panel-title ub-post-title">
+          {{{title}}}
+        </h3>
+      </div>
+
+      {{! Post content }}
+      <div class="panel-body post-excerpt">
+        {{content}}
+      </div>
+
+      <footer id="ub-post-meta">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <time class="text-center" datetime="{{date format='MM-DD-YYYY'}}">
+              <span class="fa fa-calendar-o"></span>
+              {{date format="MMMM DD, YYYY"}}
+            </time>
+          </div>
+          <div class="col-md-6 ub-center-meta">
+            <span class="ub-post-tags">
+              {{#if tags}}
+                <span class="fa fa-tags"></span> {{tags}}
+              {{/if}}
+            </span>
+          </div>
+          <div class="col-md-3 text-center">
+            {{> "share_post" }}
+          </div>
+        </div>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<div class="container">
+  <div class="col-md-12">
+    <hr class="ub-post-hr">
+  </div>
+</div>
+
+<div id="ub-post-author" class="container">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="col-md-2">
+          <div class="img-circle ub-author-image" style="background-image: url('{{author.image}}');" href="#">
+            <span class="hide">{{author.name}}</span>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="ub-author-name">
+            <h3>{{author.name}}</h3>
+            {{author.bio}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{! comment section}}
+<div id="ub-post-comments" class="container">
+  {{> "disqus" }}
+</div>
+
+{{/post}}

@@ -20,17 +20,17 @@
 
       <footer id="ub-post-meta">
         <div class="row">
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 ub-left">
             <span class="fa fa-calendar-o" data-toggle="tooltip" data-placement="left" title="Posted on"></span>
             <time class="post-date" datetime="{{date format='MM-DD-YYYY'}}">{{date format="MMMM DD, YYYY"}}</time>
           </div>
-          <div class="col-md-6 ub-center-meta">
+          <div class="col-md-7 ub-center">
             {{#if tags}}
               <span class="fa fa-tags"></span>
             {{/if}}
             {{tags prefix=""}}
           </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-2 ub-right">
             <a href="{{url}}" class="read-more">
               <span class="fa fa-terminal"> Read More</span>
             </a>

@@ -21,20 +21,20 @@
 
       <footer id="ub-post-meta">
         <div class="row">
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center ub-left">
             <time class="text-center" datetime="{{date format='MM-DD-YYYY'}}">
               <span class="fa fa-calendar-o"></span>
               {{date format="MMMM DD, YYYY"}}
             </time>
           </div>
-          <div class="col-md-6 ub-center-meta">
+          <div class="col-md-6 ub-center">
             <span class="ub-post-tags">
               {{#if tags}}
                 <span class="fa fa-tags"></span> {{tags}}
               {{/if}}
             </span>
           </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center ub-right">
             {{> "share_post" }}
           </div>
         </div>
@@ -42,12 +42,6 @@
     </article>
   </div>
 </main>
-
-<div class="container">
-  <div class="col-md-12">
-    <hr class="ub-post-hr">
-  </div>
-</div>
 
 <div id="ub-post-author" class="container">
   <div class="col-md-12">

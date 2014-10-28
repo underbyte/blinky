@@ -4,7 +4,7 @@
 //* Global
 //*-----------------------------------------
 body {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 .author-thumb {
   height: 4rem;
@@ -13,19 +13,27 @@ body {
 #ub-nav-social {
   margin: 1.5rem 0 1.5rem 1.5rem;
 }
-.ub-center-meta {
-  @media (max-width: @screen-xs-max) {
-    text-align: center;
-  }
-}
 #ub-static {
   padding: 3rem 0;
+}
+.ub-left {
+  margin: 0.75rem 0;
+}
+.ub-center {
+  margin: 0.75rem 0;
+}
+.ub-right {
+  margin: 0.75rem 0;
+  @media (min-width: @screen-md-min) {
+    text-align: right;
+  }
 }
 
 //*-----------------------------------------
 //* Nav
 //*-----------------------------------------
 #ub-nav {
+  padding: 0 1rem;
   a {
     color: @gray;
   }
@@ -84,13 +92,13 @@ body {
     color: @gray;
   }
   #ub-search-input {
-    padding-left: 2px;
+    padding-left: 0.25rem;
     color: @gray;
     background: #ffffff;
     font-size: 15px;
   }
   input:focus {
-      border-bottom: 1px solid @gray;
+      border-bottom: 0.25rem solid @gray;
     }
   ::-webkit-input-placeholder {
     color: @gray;
@@ -106,10 +114,10 @@ body {
 }
 #ub-search-container {
   display: none;
-  top: 30px;
+  top: 2.5rem
 }
 #ub-search-results {
-  min-width: 25rem;;
+  min-width: 25rem;
   background: #ffffff;
 }
 .ub-search-clear-toggle {

@@ -6,7 +6,11 @@ software. It is designed to be responsive, fast and simple.
 #Main features
  * [Bootstrap 3](http://getbootstrap.com/) themed using
  [Bootswatch](http://bootswatch.com/paper/)
+ * [Google open fonts](https://www.google.com/fonts)
+ * [Fast click](https://github.com/ftlabs/fastclick)
+ * [jQuery](http://jquery.com/)
  * Syntax Highlighter - [Prism](http://prismjs.com/)
+ * [Fontawesome](http://fontawesome.io/)
  * Post Search - [Ghost Hunter](https://github.com/i11ume/ghostHunter/)
  * Comment - [Disqus](https://disqus.com/)
 

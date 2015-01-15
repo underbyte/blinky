@@ -18,14 +18,17 @@ body {
 }
 .ub-left {
   margin: 0.75rem 0;
+  @media (min-width: @screen-md) {
+    .text-center()
+  }
 }
 .ub-center {
   margin: 0.75rem 0;
 }
 .ub-right {
   margin: 0.75rem 0;
-  @media (min-width: @screen-md-min) {
-    text-align: right;
+  @media (max-width: @screen-xs-max) {
+    .pull-right()
   }
 }
 

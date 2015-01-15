@@ -21,7 +21,7 @@
 
       <footer id="ub-post-meta">
         <div class="row">
-          <div class="col-md-3 text-center ub-left">
+          <div class="col-md-3 ub-left">
             <time class="text-center" datetime="{{date format='MM-DD-YYYY'}}">
               <span class="fa fa-calendar-o"></span>
               {{date format="MMMM DD, YYYY"}}
@@ -34,7 +34,7 @@
               {{/if}}
             </span>
           </div>
-          <div class="col-md-3 text-center ub-right">
+          <div class="col-md-3 ub-right">
             {{> "share_post" }}
           </div>
         </div>
@@ -47,12 +47,12 @@
   <div class="col-md-12">
     <div class="panel panel-default">
       <div class="panel-body">
-        <div class="col-md-2">
+        <div class="col-md-3">
           <div class="img-circle ub-author-image" style="background-image: url('{{author.image}}');" href="#">
             <span class="hide">{{author.name}}</span>
           </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
           <div class="ub-author-name">
             <h3>{{author.name}}</h3>
             {{author.bio}}
